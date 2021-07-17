@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png" type="image/icon type">
+    <link rel="stylesheet" href="style.css">
+    <title>SAURABH KUMAR</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ " rel=" stylesheet " href="ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous"
+    />
+
+</head>
+
+<body>
+    <div class="hero">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">PORTFOLIO</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">HIRE ME</a></li>
+            </ul>
+            <img src="images/moon.png" id="icon">
+        </nav>
+        <div class="info">
+            <h1> I'm <span>Saurabh</span> Kumar</h1>
+            <p>Extremely motivated to constantly develop my skills and <br>grow professionally.</p>
+            <a href="./images/SAURABH_KUMAR_RESUME.pdf">Resume</a>
+        </div>
+
+        <div class="imgbox">
+            <img src="images/pattern.png" class="backimg">
+            <img src="images/computer1.png" class="mainimg">
+        </div>
+
+        <div class="social-links">
+            <a href=""><i class="fab fa-linkedin-in"></i></a>
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+    <div id="div11">
+
+    </div>
+    <script>
+        var icon = document.getElementById("icon");
+        icon.onclick = function() {
+            document.body.classList.toggle("dark-theme");
+            if (document.body.classList.contains("dark-theme")) {
+                icon.src = "images/sun.png";
+            } else {
+                icon.src = "images/moon.png";
+            }
+        }
+    </script>
+    <script src="index.js"></script>
+</body>
+
+</html>
