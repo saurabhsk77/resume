@@ -96,12 +96,34 @@
     .info {
         margin-left: 8%;
         margin-top: 15%;
+        position: relative;
+        animation-name: landing;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
     }
     
-    .info h1 {
+    .info h1  {
+        position: relative;
         font-size: 60px;
         color: var(--secondary-color);
         margin-bottom: 20px;
+        transition: font-size 2s ease-in-out;
+        /* animation-name: landing;
+        animation-duration: 3s;
+        animation-fill-mode: forwards; */
+        
+    }
+    
+    @keyframes landing {
+        0%{
+            top: -150px;
+        }
+        100%{
+            top: 0;
+        }
+    }
+    .info h1:hover{
+        font-size: 65px;
     }
     
     span {
@@ -141,7 +163,17 @@
         height: 80%;
         position: absolute;
         bottom: 0;
-        right: 100px;
+        right: 80px;
+        animation: images 2s forwards;
+    }
+    @keyframes images {
+        0%{
+            right: -80px;
+        }
+        100%{
+            right: 0;
+        }
+        
     }
     
     .imgbox img {
@@ -164,12 +196,24 @@
     .social-links {
         margin-left: 8%;
         margin-top: 50px;
+        position: relative;
+        animation: social 2s forwards;
     }
     
     .social-links a {
         font-size: 30px;
         color: var(--secondary-color);
         margin-right: 20px;
+        
+    }
+    @keyframes social {
+        0%{
+            left: -250px;
+        }
+        100%{
+            left: 0;
+        }
+        
     }
     
     .social-links a:hover {
@@ -247,11 +291,11 @@
             display: initial;
         }
         .imgbox img {
-            height: 50%;
+            height: 60%;
             position: absolute;
-            left: 70%;
+            left: 30%;
             bottom: 0;
-            transform: translateX(-50%);
+            transform: translateX(-90%);
             transition: bottom 1s, left 1s;
         }
 
