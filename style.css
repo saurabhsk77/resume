@@ -266,6 +266,14 @@
             font-size: 40px;
             z-index: 1;
         }
+        .imgbox{
+            width: 50%;
+            height: 50%;
+            position: absolute;
+            top: 20%;
+            left: 15%;
+            /* display: none; */
+        }
       
     }
 
@@ -273,10 +281,7 @@
         body {
           background-color: lightblue;
         }
-        .hero{
-            width: 100%;
-            height: 100vh;
-        }
+       
         .info{
             opacity: 1;
             width: 90%;
@@ -330,7 +335,7 @@
            position: absolute;
            top: 20%;
            left: 15%;
-           /* display: none; */
+           display: flex;
        }
        .social-links{
            width: 50%;
@@ -339,7 +344,7 @@
 
       }
 
-      @media (max-width:350px){
+      @media (max-width:450px){
         .hero{
             width: 100%;
             height: 100%;
