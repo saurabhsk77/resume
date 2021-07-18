@@ -279,7 +279,7 @@
         }
         .info{
             opacity: 1;
-            width: 100%;
+            width: 90%;
             z-index: 10;
             
         }
@@ -297,6 +297,7 @@
           }
           .checkbtn{
               display: block;
+              margin-right: 10px;
           }
           ul {
               position: fixed;
@@ -328,7 +329,7 @@
            height: 50%;
            position: absolute;
            top: 20%;
-           left: 30%;
+           left: 25%;
            /* display: none; */
        }
        .social-links{
