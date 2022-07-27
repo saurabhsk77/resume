@@ -19,6 +19,7 @@
       integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   </head>
 
@@ -67,7 +68,28 @@
         ></a>
       </div>
     </div>
+    <hr id="separater" />
+    <div class="skills_div" data-aos="flip-right">
+      <span id="skills_heading" data-aos="flip-left">SKILLS</span>
+      <div id="skillset">
+        <div class="skill" data-aos="zoom-in-up">HTML</div>
+        <div class="skill" data-aos="zoom-in-up">CSS</div>
+        <div class="skill" data-aos="zoom-in-up">JAVASCRIPT</div>
+        <div class="skill" data-aos="zoom-in-up">REACTJS</div>
+        <div class="skill" data-aos="zoom-in-up">REDUX</div>
+        <div class="skill" data-aos="zoom-in-up">TYPESCRIPT</div>
+        <div class="skill" data-aos="zoom-in-up">OAUTH 2.0</div>
+        <div class="skill" data-aos="zoom-in-up">CORE JAVA</div>
+      </div>
+    </div>
 
     <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 100,
+        duration: 1000,
+      });
+    </script>
   </body>
 </html>
